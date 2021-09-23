@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;900&family=Oswald:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    background-color: #f3f4f4;
+    padding-top: 100px;
+}
+
+.form-page {
+    padding: 64px 56px 64px 56px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    margin: auto;
+    width: 523px;
+    display: inline-block;
+    text-align: center;
+}
+
+.form-title {
+    margin: 0 172px 47px 151px;
+    font-size: 32px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #000;
+    font-family: 'Noto Sans JP', sans-serif;
+
+}
+
+.messages {
+    font-family: 'Oswald', sans-serif;
+    list-style-type: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.form-input {
+    border-radius: 10px;
+    background-color: #f3f4f4;
+    width: 411px;
+    height: 64px;
+    border: 0px solid;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.form-input::placeholder{
+    font-size: 24px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #ababab;
+    font-family: 'Oswald', sans-serif;
+}
+
+.form-input::after {
+    font-size: 24px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #ababab;
+    font-family: 'Oswald', sans-serif;
+}
+
+.form-button {
+    width: 411px;
+    height: 71px;
+    margin: 32px 0 16px;
+    border-radius: 10px;
+    background-color: #1e88e5;
+    border: 0px solid;
+    font-size: 24px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    cursor:pointer;
+}
+
+
+.links{
+    width: 119px;
+    height: 22px;
+    margin: 16px 146px 0;
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #1e88e5;
+    text-decoration: none;
+}

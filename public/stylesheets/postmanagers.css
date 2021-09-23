@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;900&family=Oswald:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    text-align: left;
+    background-color: #f3f4f4;
+    padding: 145px 242px 0px 243px;
+
+}
+
+.imgpart {
+    width: 955px;
+    justify-content: space-between;
+    display: flex;
+    margin-bottom: 32px;
+}
+.titlepart{
+    margin-bottom: 32px;
+}
+.bodypart{
+    margin-bottom: 32px;
+}
+
+::placeholder {
+    font-size: 28px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    color: #000;
+}
+.title {
+    font-size: 32px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #000;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.title-input{
+    width: 955px;
+    height: 87px;
+    margin: 25px 0 32px 2px;
+    padding: 26px 808px 27px 32px;
+    border-radius: 10px;
+    background-color: white;
+    border: 0px solid;
+
+}
+
+.body-input{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border: 0px solid;
+    hyphens: auto;
+}

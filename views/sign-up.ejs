@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <title> sign-up </title>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/forms.css"/>
+</head>
+
+<body>
+<form action="/users/sign-up" method="POST" class="form-page">
+    <div class="form-title">
+        signup
+    </div>
+    <div class="messages">
+        <ul>
+            <% if (typeof errors != 'undefined') { %> <% errors.forEach(error => { %>
+                <li><%= error.message %></li>
+            <% }) %>
+            <% } %>
+        </ul>
+    </div>
+    <div>
+        <input type="text" name="username" placeholder="username" class="form-input" required>
+    </div>
+    <div>
+        <input type="password" name="password" placeholder="password" class="form-input" required>
+    </div>
+    <div>
+        <input type="password" name="confirmPassWord" placeholder="confirm password"
+               class="form-input" required>
+    </div>
+
+
+    <button type="submit" class="form-button">Sign-up</button>
+    <a href="/users/login" class="links">login</a>
+</form>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/postmanagers.css"/>
+    <title> edit post </title>
+</head>
+
+<body>
+<form action="/users/dashboard/edit/<%= post.id %>" method="POST"  >
+    <div class="imgpart">
+        <div class="title">
+            Image
+        </div>
+        <div>
+            <input type="file" accept="image/*" name="imgurl"  required>
+        </div>
+    </div>
+
+    <div class="titlepart">
+        <div class="title">
+            Title
+        </div>
+        <div>
+            <input type="text"  name="title" value="<%= post.title %>" class="title-input"  required>
+        </div>
+    </div>
+
+    <div class="bodypart">
+        <div class="title">
+            Body
+        </div>
+        <div style="height: 500px;border-radius: 10px; background-color: white;margin: 25px 0 0 2px; padding: 32px 32px 32px 32px;">
+            <textarea  name="bodytext" class="body-input" required> <%= post.bodytext %> </textarea>
+        </div>
+    </div>
+
+
+    <button type="submit" >save</button>
+</form>
+<a href="/users/dashboard"  style="color: blueviolet">Go Back</a>
+</body>
+</html>
+

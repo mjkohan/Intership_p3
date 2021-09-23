@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <title> Post </title>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/post.css"/>
+
+</head>
+
+<body>
+    <div style="text-align: right">
+        <a href="/">
+            <button type="submit"  class="close-button">Close</button>
+        </a>
+    </div>
+    <div class="header">
+        <div style="height: 300px;width: 200px;">
+            <img src="/images/<%= post.imgurl %>">
+        </div>
+        <div>
+            <div class="title">
+                <%=post.title%>
+            </div>
+        </div>
+    </div>
+        <div class="post-body">
+            <%= post.bodytext %>
+        </div>
+
+</body>
+
+</html>

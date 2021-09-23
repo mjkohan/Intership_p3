@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <title> Login </title>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/forms.css"/>
+</head>
+
+<body>
+
+
+<form action="/users/login" method="POST" class="form-page">
+    <div class="form-title">
+        Login
+    </div>
+    <div class="messages">
+        <ul>
+            <% if (typeof errors != 'undefined') { %> <% errors.forEach(error => { %>
+                <li><%= error.message %></li>
+            <% }) %>
+            <% } %>
+        </ul>
+
+        <ul>
+            <% if(messages.success_msg) { %>
+                <li><%= messages.success_msg %></li>
+            <% } %>
+        </ul>
+
+        <ul>
+            <% if (messages.error) { %>
+                <li><%= messages.error %></li>
+            <% } %>
+        </ul>
+    </div>
+    <div>
+        <input type="text" name="username" placeholder="username" class="form-input" required>
+    </div>
+    <div>
+        <input type="password" name="password" placeholder="password" class="form-input" required>
+    </div>
+    <button type="submit" class="form-button">Login</button>
+    <a href="/users/sign-up" class="links">create account</a>
+</form>
+
+
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <title> Blog </title>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/index.css"/>
+
+</head>
+
+<body>
+<div class="header">
+    Latest Posts
+</div>
+<ul>
+    <% if (typeof posts != 'undefined') { %>
+
+    <% posts.forEach(post => { %>
+        <li>
+            <div class="post-wrapper">
+                <div class="imgpart">
+                    <img src="/images/<%= post.imgurl %>">
+                </div>
+                <div class="right-side">
+                    <div class="post-title">
+                        <%= post.title %>
+                    </div>
+                    <div class="post-body">
+                        <%= post.bodytext.substring(0, 250) %>
+                    </div>
+                    <div>
+                        <a href="/posts/<%=post.id%>" class="links">Continue reading</a>
+                    </div>
+                </div>
+            </div>
+        </li>
+    <% }) %>
+        <% } %>
+
+</ul>
+
+</body>
+
+</html>

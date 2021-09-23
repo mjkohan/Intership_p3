@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="/stylesheets/dashboard.css"/>
+    <title>Dashboard</title>
+</head>
+<body>
+
+
+<div class = "header">
+    <div class="title">
+        Posts
+    </div>
+    <div>
+        <a href="/users/dashboard/postcreate/<%= username %>">
+        <button type="submit"  class="newpost-button">New Post</button>
+        </a>
+    </div>
+</div>
+
+
+
+<ul>
+    <% if (typeof posts != 'undefined') { %>
+<% posts.forEach(post => { %>
+    <li>
+        <div class="post-wrapper">
+            <div class="post-title" >
+                <%= post.title %>
+            </div>
+            <div class="right-side">
+                <a href="/users/dashboard/edit/<%= post.id %>"  class ="links" style="color: blue">EDIT</a>
+                <a href="/users/dashboard/delete/<%= post.id %>" class ="links" style="color: red">DELETE</a>
+            </div>
+        </div>
+
+    </li>
+<% }) %>
+        <% } %>
+</ul>
+<a href="/users/logout" class ="links" style="color: blueviolet">Logout</a>
+</body>
+</html>
